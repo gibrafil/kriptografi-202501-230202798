@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 2
+Topik: Cryptosystem 
+Nama: Ahmad Galif Ganendra
+NIM: 2312020798
+Kelas: 5IKRA  
 
 ---
 
@@ -13,10 +13,13 @@ Kelas: [Kelas]
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Kriptosistem merupakan suatu sistem keamanan informasi yang dirancang untuk melindungi pesan atau data agar tidak dapat dipahami oleh pihak yang tidak berhak. Secara umum, kriptosistem mencakup empat komponen utama yaitu pesan asli (plaintext), pesan tersandi (ciphertext), algoritma kriptografi, dan kunci (key). Algoritma kriptografi berfungsi sebagai prosedur matematis untuk melakukan proses enkripsi dan dekripsi. Enkripsi mengubah plaintext menjadi ciphertext agar pesan tidak terbaca selama proses transmisi, sedangkan dekripsi mengembalikan ciphertext ke bentuk semula menggunakan kunci tertentu.
 
----
+Dalam implementasinya, kriptosistem dibagi menjadi dua kategori utama berdasarkan cara penggunaan kuncinya, yaitu kriptosistem kunci simetris (symmetric key cryptosystem) dan kriptosistem kunci asimetris (asymmetric key cryptosystem). Pada kriptosistem simetris, kunci yang digunakan untuk enkripsi dan dekripsi adalah sama. Keamanan sistem ini sangat bergantung pada kerahasiaan kunci yang digunakan oleh kedua belah pihak. Contoh algoritma simetris antara lain DES (Data Encryption Standard), AES (Advanced Encryption Standard), dan RC4. Sistem ini efisien dari segi waktu dan sumber daya komputasi, namun memiliki kelemahan pada proses distribusi kunci yang berisiko bocor.
+
+Sementara itu, kriptosistem asimetris menggunakan dua kunci yang berbeda namun saling berhubungan secara matematis, yaitu public key dan private key. Public key dapat disebarkan secara bebas untuk mengenkripsi data, sedangkan private key harus dijaga kerahasiaannya dan digunakan untuk mendekripsi pesan. Contoh algoritma yang menerapkan konsep ini adalah RSA (Rivest–Shamir–Adleman) dan ElGamal. Kriptosistem asimetris memiliki tingkat keamanan lebih tinggi dalam distribusi kunci dan cocok digunakan untuk autentikasi digital, tanda tangan elektronik, serta pertukaran kunci pada sistem hybrid.
+
+Dalam praktik modern, kedua jenis kriptosistem ini sering digunakan secara bersamaan untuk membentuk sistem kriptografi hybrid. Kriptografi simetris digunakan untuk proses enkripsi data dalam jumlah besar karena kecepatannya, sedangkan kriptografi asimetris digunakan untuk mengamankan pertukaran kunci simetris tersebut. Dengan demikian, kombinasi keduanya mampu memberikan keseimbangan antara efisiensi dan keamanan dalam sistem komunikasi digital.
 
 ## 3. Alat dan Bahan
 (- Python 3.x  
